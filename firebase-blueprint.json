@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "products": {
+      "title": "Products",
+      "description": "Collection of jewelry products",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "price": { "type": "number" },
+        "originalPrice": { "type": "number" },
+        "rating": { "type": "number" },
+        "reviewCount": { "type": "number" },
+        "images": { "type": "array" },
+        "description": { "type": "string" },
+        "stockQuantity": { "type": "number" },
+        "specifications": { "type": "object" },
+        "tags": { "type": "array" }
+      },
+      "required": ["id", "name", "category", "price", "stockQuantity"]
+    },
+    "orders": {
+      "title": "Orders",
+      "description": "Collection of customer orders",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string" },
+        "status": { "type": "string" },
+        "trackingNumber": { "type": "string" },
+        "courierPartner": { "type": "string" },
+        "estimatedDelivery": { "type": "string" },
+        "items": { "type": "array" },
+        "subtotal": { "type": "number" },
+        "discount": { "type": "number" },
+        "shippingFee": { "type": "number" },
+        "total": { "type": "number" },
+        "customer": { "type": "object" },
+        "paymentMethod": { "type": "string" },
+        "date": { "type": "string" }
+      },
+      "required": ["orderId", "status", "items", "total", "customer", "paymentMethod", "date"]
+    }
+  }
+}

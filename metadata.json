@@ -1,0 +1,6 @@
+{
+  "name": "RAGINI GARODIA - Pure Gold-Plated Fine Jewelry",
+  "description": "Exquisite 18K & 22K micro-gold plated fine jewelry brand based in India, featuring zero-stone pure gold metal craftsmanship, order tracking, and inventory management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
